@@ -3,3 +3,6 @@
 // -3 -> нет
 // 7 -> нет
 
+Console.WriteLine("Введите число ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(a % 2 == 0 ? "Число чётное" : "Число нечётное");
