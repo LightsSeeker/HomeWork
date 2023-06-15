@@ -3,4 +3,25 @@
 // 7 -> да
 // 1 -> нет
 
-Console.WriteLine("Введите цифру,обозначающую день недели ");
+int ReadInt(string message)
+{
+    Console.Write(message);
+    int number = Convert.ToInt32(Console.ReadLine());
+    return number;
+}
+
+bool ValidateDate(int number)
+{
+    if(number < 1 || number > 7)
+    {
+        Console.WriteLine("Нет такого дня недели");
+        return false;
+    }
+    return true;
+}
+
+int day = ReadInt("Введите цифру,обозначающую день недели > ");
+if (ValidateDate(day))
+{
+    Console.WriteLine(day == 6 || day == 7 ? "Выходной" : "Рабочий");
+}
