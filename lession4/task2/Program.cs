@@ -24,4 +24,4 @@ int SumAllDigit(int number)
 }
 
 int number = Prompt("Введите число:");
-Console.WriteLine($"Сумма всех чисел в цифре {number} = {SumAllDigit(number)}");
+Console.WriteLine($"Сумма всех цифр в числе {number} = {SumAllDigit(number)}");
