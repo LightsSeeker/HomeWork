@@ -12,7 +12,7 @@ int[,] CreateArr(int rows, int cols) {
     {
         for (int j = 0; j < arrayD2.GetLength(1); j++)
         {
-            arrayD2[i,j] = new Random().Next(0,255);
+            arrayD2[i,j] = new Random().Next(-100,100);
         }
     }
     return arrayD2;
